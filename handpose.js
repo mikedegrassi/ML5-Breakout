@@ -3,8 +3,6 @@ const knnClassifier = ml5.KNNClassifier();
 let handpose;
 let video;
 let hands = [];
-let appear = false
-
 
 const options = {
     flipHorizontal: true, // boolean value for if the video should be flipped, defaults to false
@@ -56,11 +54,10 @@ function setup() {
     });
 
     // Hide the video element, and just show the canvas
-    video.hide();
+    // video.hide();
 }
 
 function classify() {
-
 
     let handPose = [];
 
@@ -78,7 +75,6 @@ function classify() {
         }
 
     });
-
 
 }
 
@@ -99,7 +95,7 @@ async function trainKnn(pose) {
 
 async function modelReady() {
 
-    knnClassifier.load('./model.json');
+    knnClassifier.load('model.json');
 
     draw()
 
