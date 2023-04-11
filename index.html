@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Handpose with Webcam</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+    <link href="game.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!--<h2 id="prediction"></h2>-->
+
+<!--<button id="one">Train right</button>-->
+<!--<button id="two">Train left</button>-->
+<!--<button id="three">Train rest</button>-->
+<!--<button id="save">Save</button>-->
+<!--<button id="predict">Predict</button>-->
+
+<h2 class="upperText">HandBall</h2>
+
+<div class="gameinfo">
+
+    <div>
+        <p class="gameEmoji">🎮</p>
+
+        <div class="flex">
+
+            <div class="emoji">
+                <p>left</p>
+                <p class="demop">
+                    ✋</p>
+            </div>
+            <div class="emoji">
+                <p>right</p>
+                <p class="demop">
+                    🤚</p>
+            </div>
+        </div>
+
+        <button id="play" class="startbutton">Start Game</button>
+    </div>
+
+</div>
+<canvas id="myCanvas" class="canvas"></canvas>
+<script src="handpose.js"></script>
+</body>
