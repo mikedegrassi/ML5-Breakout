@@ -162,7 +162,7 @@ let leftPressed = false;
 let brickRowCount = 5;
 
 // left to right brick count
-let brickColumnCount = 4;
+let brickColumnCount = 3;
 
 // brick size
 let brickWidth = 40;
@@ -244,7 +244,7 @@ function drawPaddle() {
 }
 
 function drawBricks() {
-    for (let c = 1; c < brickColumnCount; c++) {
+    for (let c = 0; c < brickColumnCount; c++) {
         for (let r = 0; r < brickRowCount; r++) {
             if (bricks[c][r].status === 1) {
                 let brickX = (r * (brickWidth + brickPadding)) + brickOffsetLeft;
