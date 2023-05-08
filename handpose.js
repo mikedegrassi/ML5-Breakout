@@ -128,15 +128,15 @@ function drawKeypoints() {
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 
-let rect = canvas.getBoundingClientRect();
-canvas.width = rect.width;
-canvas.height = rect.height ;
+// let rect = canvas.getBoundingClientRect();
+// canvas.width = rect.width;
+// canvas.height = rect.height ;
 
-ctx.scale(devicePixelRatio, devicePixelRatio);
+// ctx.scale(devicePixelRatio, devicePixelRatio);
 
-let scale = window.devicePixelRatio;
-
-ctx.scale(scale, scale);
+// let scale = window.devicePixelRatio;
+//
+// ctx.scale(scale, scale);
 
 let ballRadius = 5;
 
@@ -159,10 +159,10 @@ let paddleX = (canvas.width - paddleWidth) / 2;
 let rightPressed = false;
 let leftPressed = false;
 
-let brickRowCount = 10;
+let brickRowCount = 5;
 
 // left to right brick count
-let brickColumnCount = 7;
+let brickColumnCount = 4;
 
 // brick size
 let brickWidth = 40;
